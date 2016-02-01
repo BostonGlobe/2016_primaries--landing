@@ -13,12 +13,18 @@
 	background-position 50%
 	background-repeat no-repeat
 	
+	$dem = darken(saturate($dem, 10), 10)
+	$gop = darken(saturate($gop, 10), 10)
+
+	background-image linear-gradient(to left, rgba($dem, .75), rgba($gop, .75)),
+							url($assets-path + 'img/landing-hero.jpg')
+	
+	border-bottom 4px solid transparent
+	border-image linear-gradient(to left, $gop, $dem)
+	border-image-slice 1
+
 	+mq('bp-2')
 		height 40vh
-	
-	&--landing
-		background-image linear-gradient(to left, shade(rgba($dem, .75), 5), rgba($gop, .55)),
-							url($assets-path + 'img/landing-hero.jpg')
 	
 	&--hed
 		font($miller-banner, $bold)
