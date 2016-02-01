@@ -6,13 +6,13 @@ const shell       	= require('shelljs');
 const argv        	= require('yargs').argv;
 const configPath = process.cwd() + '/data/config.json';
 const config     	= JSON.parse(fs.readFileSync(configPath, 'utf8'));
-const base        	= '/web/bgapps/html/graphics/';
+const base        	= '/web/bgapps/html/election-results/2016';
 const host        	= 'shell.boston.com';
 
 gulp.task('ssh-prod', function(cb) {
 	const username = argv.u;
 	const files = argv.html ? 'index.html' : '.';
-	const filepath = base + config.path;
+	const filepath = base;
 	const configured = checkConfiguration(username);
 
 	let command = '';
@@ -26,11 +26,11 @@ gulp.task('ssh-prod', function(cb) {
 });
 
 const checkConfiguration = function(username) {
-	if (!config.path) {
-		console.log('*** setup ssh-config.js "path" to upload to apps ***');
-	}
+	// if (!config.path) {
+	// 	console.log('*** setup ssh-config.js "path" to upload to apps ***');
+	// }
 	if (!username) {
 		console.log('*** enter your username with "gulp prod -u username" ***');
 	}
-	return username && typeof username === 'string' && config.path;
+	return username && typeof username === 'string';
 };
