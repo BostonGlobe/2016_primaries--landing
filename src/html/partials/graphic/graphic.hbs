@@ -4,3 +4,30 @@
 		<p class='updater'></p>
 	</div> --}}
 </div>
+
+<div class='dir container'>
+	{{!-- Each DATE is its own ul --}}
+	<ul class='dir--list'>
+		<time class='dir--date' datetime="2016-02-01">February 1</time>
+		{{!-- Each PRIMARY/CAUCUS is its own list item --}}
+		<li class='dir--item dir--democratic'>
+			<a class='dir--link' href='#'>Iowa Democratic caucuses</a>
+			{{!-- If there is a WINNER, display this div --}}
+			<div class='dir--poll'>
+				<p class='dir--poll-winner winner-tag'>Clinton <span>74.5%</span></p>
+			</div> 
+			{{!-- End WINNER --}}
+		</li>
+		{{!-- End PRIMARY/CAUCUS --}}
+		<li class='dir--item dir--republican'>
+			<a class='dir--link' href='#'>Iowa Republican caucuses</a>
+			{{!-- If there is a WINNER, display this div --}}
+			<div class='dir--poll'>
+				<p class='dir--poll-winner winner-tag'>Trump <span>74.5%</span></p>
+			</div> 
+			{{!-- End WINNER --}}
+		</li>
+		{{!-- End PRIMARY/CAUCUS --}}
+	</ul>
+	{{!-- End DATE --}}
+</div>

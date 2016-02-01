@@ -1,0 +1,43 @@
+//========================
+// Directory
+//========================
+.dir
+	position relative
+	
+	&--list
+		list-style-type none
+		margin-bottom 2em
+	
+	&--date
+		font($benton, $bold)
+		color $offblack
+		display block
+		border-bottom $border
+		margin-bottom 1em
+	
+	&--item
+		margin-bottom 1em
+	
+	&--link
+		font($benton, $bold)
+	
+	&--poll
+		
+		&-winner
+			font-size 0.75em
+			display inline-block
+			background-color $lt-gray
+			border-radius 3px
+			font($benton, $bold)
+			padding 0 1em
+		span
+			font-weight $regular
+
+
+// Party specific styles
+for party, color in $parties
+	.dir--{party} a
+		color color
+		
+		&:hover
+			color darken(color, 20)
