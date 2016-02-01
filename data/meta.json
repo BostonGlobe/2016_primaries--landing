@@ -1,0 +1,16 @@
+{
+	"title": "Campaign 2016",
+	"author": "",
+	"description": "Description of graphic",
+	"keywords": "Comma, delimited, for, seo",
+	"url": "https://apps.bostonglobe.com/graphics/path/to/graphic",
+	"image_url": "https://apps.bostonglobe.com/graphics/path/to/image",
+	"page_id": "apps.mmddyy.title-no-spaces",
+	"section": "Metro",
+	"section_url": "https://bostonglobe.com/poltics",
+	"section_chartbeat": "politics",
+	"header_color": "",
+	"credits": "",
+	"teasers": [],
+	"paywall": true
+}

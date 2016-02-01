@@ -1,0 +1,103 @@
+//========================
+// Atoms
+//========================
+
+// Subhed
+.subhed
+	font($miller-banner, $bold)
+	font-size 2em
+	line-height 1.2
+	margin-bottom 0.5em
+	text-align center
+	color $offblack
+	
+// Campaign logo
+.campaign--logo:before
+	content ''
+	display inline-block
+	width image-size($assets-path + 'img/election-logo.svg')[0]
+	height image-size($assets-path + 'img/election-logo.svg')[1]
+	background-image url($assets-path + 'img/election-logo.svg')
+
+// Winner!
+.winner-tag:before
+	content '\2714'
+	display inline-block
+	vertical-align middle
+	color $offwhite
+	background-color $winner
+	border-radius 50%
+	font-size 0.7em
+	line-height 1.5
+	width 1.5em
+	height 1.5em
+	margin-right 0.5em
+	text-align center
+	vertical-align text-top
+
+// Precincts
+.precincts
+	font($benton)
+	color $offblack
+	font-size 0.65em
+	text-align right
+
+// Updater
+.updater
+	font($benton, $bold)
+	color $offblack
+	font-size 0.75em
+
+.updating:after
+	content '\2026'
+	display inline-block
+	width 0px
+	overflow hidden
+	vertical-align bottom
+	animation ellipsis steps(4, end) 0.8s infinite
+	color lighten($offblack, 20)
+
+@keyframes ellipsis
+	to
+		width 20px
+
+// See all races button
+.btn--tertiary
+	font($benton, $bold)
+	color $offblack
+	border-radius 3px
+	padding 0.5em 1em
+	font-size 0.75em
+	background-color $offwhite
+	transition $ease
+	
+	&:hover
+		background-color $offblack
+		color $offwhite
+
+//Switch Button
+.btn--switch
+	font-size 0.75em
+	color $offwhite
+	font($benton, $bold)
+	padding 0.5em 1em
+	border-radius 3px
+	text-align center
+	transition $ease
+
+	&:hover
+		color $offwhite
+
+	&.btn--democratic.hide--democratic
+		display none
+
+	&.btn--republican.hide--republican
+		display none
+
+for party, color in $parties
+	.btn--{party}
+		background-color darken(color, 10)
+
+		&:hover
+			background-color darken(color, 20)
+

@@ -1,0 +1,52 @@
+//========================
+// Hero
+//========================
+.hero
+	height 30vh
+	display flex
+	align-items center
+	justify-content center
+	flex-direction column
+	position relative
+	padding 1em
+	background-size cover
+	background-position 50%
+	background-repeat no-repeat
+	
+	+mq('bp-2')
+		height 40vh
+
+	for party, color in $parties
+		color = shade(saturate(color, 50), 40)
+		&--{party}
+			border-bottom 3px solid color
+			background-image linear-gradient(to left, shade(rgba(color, .75), 5), rgba(color, .55)),
+							url($assets-path + 'img/' + party + '-hero.jpg')
+	
+	&--hed
+		font($miller-banner, $bold)
+		color $offwhite
+		text-align center
+		font-size 1.5em
+		line-height 1
+		text-shadow 0px 0px 8px #333
+		
+		+mq('bp-2')
+			font-size 3em
+	
+	&--bottom
+		position absolute
+		bottom -0.5em
+		left 0
+		right 0
+		width 100%
+		text-align center
+		
+		+mq('bp-2')
+			bottom -1em
+		
+		> *
+			display inline-block
+			background-color #fff
+			width 10em
+			border-radius 3px
