@@ -6,6 +6,58 @@
 </div>
 
 <div class='dir container'>
+
+	{{!-- Each DATE is its own ul --}}
+	<ul class='dir--list'>
+		<time class='dir--date' datetime="2016-02-20">February 20</time>
+		{{!-- Each PRIMARY/CAUCUS is its own list item --}}
+		<li class='dir--item dir--democratic'>
+			<a class='dir--link' href='https://apps.bostonglobe.com/election-results/2016/primary/republican/south-carolina'>South Carolina Republican primary</a>
+			{{!-- If there is a WINNER, display this div --}}
+			{{!-- <div class='dir--poll'>
+				<p class='dir--poll-winner'></p>
+			</div> --}}
+			{{!-- End WINNER --}}
+		</li>
+		{{!-- End PRIMARY/CAUCUS --}}
+		<li class='dir--item dir--republican'>
+			<a class='dir--link' href='https://apps.bostonglobe.com/election-results/2016/caucuses/democratic/nevada'>Nevada Democratic caucuses</a>
+			{{!-- If there is a WINNER, display this div --}}
+			{{!-- <div class='dir--poll'>
+				<p class='dir--poll-winner'></p>
+			</div> --}}
+			{{!-- End WINNER --}}
+		</li>
+		{{!-- End PRIMARY/CAUCUS --}}
+	</ul>
+	{{!-- End DATE --}}
+
+	{{!-- Each DATE is its own ul --}}
+	<ul class='dir--list'>
+		<time class='dir--date' datetime="2016-02-09">February 9</time>
+		{{!-- Each PRIMARY/CAUCUS is its own list item --}}
+		<li class='dir--item dir--democratic'>
+			<a class='dir--link' href='https://apps.bostonglobe.com/election-results/2016/primary/democratic/new-hampshire'>New Hampshire Democratic primary</a>
+			{{!-- If there is a WINNER, display this div --}}
+			<div class='dir--poll'>
+				<p class='dir--poll-winner winner-tag'>Bernie Sanders <span>60.4%</span></p>
+			</div>
+			{{!-- End WINNER --}}
+		</li>
+		{{!-- End PRIMARY/CAUCUS --}}
+		<li class='dir--item dir--republican'>
+			<a class='dir--link' href='https://apps.bostonglobe.com/election-results/2016/primary/republican/new-hampshire'>New Hampshire Republican primary</a>
+			{{!-- If there is a WINNER, display this div --}}
+			<div class='dir--poll'>
+				<p class='dir--poll-winner winner-tag'>Donald Trump <span>35.3%</span></p>
+			</div>
+			{{!-- End WINNER --}}
+		</li>
+		{{!-- End PRIMARY/CAUCUS --}}
+	</ul>
+	{{!-- End DATE --}}
+	
+
 	{{!-- Each DATE is its own ul --}}
 	<ul class='dir--list'>
 		<time class='dir--date' datetime="2016-02-01">February 1</time>
