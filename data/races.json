@@ -1,0 +1,57 @@
+[{
+	"datetime": "2016-02-23",
+	"dateDisplay": "February 23",
+	"events": [{
+		"state": "Nevada",
+		"party": "Republican",
+		"raceType": "Caucuses"
+	}] 	
+},{
+	"datetime": "2016-02-20",
+	"dateDisplay": "February 20",
+	"events": [{
+		"state": "Nevada",
+		"party": "Democratic",
+		"raceType": "Caucuses",
+		"winnerName": "Hillary Clinton",
+		"winnerPercent": "52.6"
+	},{
+		"state": "South Carolina",
+		"party": "Republican",
+		"raceType": "Primary",
+		"winnerName": "Donald Trump",
+		"winnerPercent": "32.5"
+	}] 	
+},{
+	"datetime": "2016-02-09",
+	"dateDisplay": "February 9",
+	"events": [{
+		"state": "New Hampshire",
+		"party": "Democratic",
+		"raceType": "Primary",
+		"winnerName": "Bernie Sanders",
+		"winnerPercent": "60.4"
+	},{
+		"state": "New Hampshire",
+		"party": "Republican",
+		"raceType": "Primary",
+		"winnerName": "Donald Trump",
+		"winnerPercent": "35.3"
+	}] 	
+},{
+	"datetime": "2016-02-01",
+	"dateDisplay": "February 1",
+	"events": [{
+		"state": "Iowa",
+		"party": "Democratic",
+		"raceType": "Caucuses",
+		"winnerName": "Hillary Clinton",
+		"winnerPercent": "49.9"
+	},{
+		"state": "Iowa",
+		"party": "Republican",
+		"raceType": "Caucuses",
+		"winnerName": "Ted Cruz",
+		"winnerPercent": "27.6"
+	}] 	
+}]
