@@ -1,10 +1,20 @@
 [{
+	"datetime": "2016-02-27",
+	"dateDisplay": "February 27",
+	"events": [{
+		"state": "South Carolina",
+		"party": "Democratic",
+		"raceType": "Primary"
+	}] 	
+},{
 	"datetime": "2016-02-23",
 	"dateDisplay": "February 23",
 	"events": [{
 		"state": "Nevada",
 		"party": "Republican",
-		"raceType": "Caucuses"
+		"raceType": "Caucuses",
+		"winnerName": "Donald Trump",
+		"winnerPercent": "45.9"
 	}] 	
 },{
 	"datetime": "2016-02-20",
