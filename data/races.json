@@ -1,10 +1,125 @@
 [{
+	"datetime": "2016-03-01",
+	"dateDisplay": "March 1",
+	"events": [{
+		"state": "Alamaba",
+		"party": "Democratic",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Alamaba",
+		"party": "Republican",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Alaska",
+		"party": "Republican",
+		"raceType": "Caucuses"
+	},
+	{
+		"state": "Arizona",
+		"party": "Democratic",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Arizona",
+		"party": "Republican",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Colorado",
+		"party": "Democratic",
+		"raceType": "Caucuses"
+	},
+	{
+		"state": "Georgia",
+		"party": "Democratic",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Georgia",
+		"party": "Republican",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Massachusetts",
+		"party": "Democratic",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Massachusetts",
+		"party": "Republican",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Minnesota",
+		"party": "Democratic",
+		"raceType": "Caucuses"
+	},
+	{
+		"state": "Minnesota",
+		"party": "Republican",
+		"raceType": "Caucuses"
+	},
+	{
+		"state": "Oklahoma",
+		"party": "Democratic",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Oklahoma",
+		"party": "Republican",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Tennessee",
+		"party": "Democratic",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Tennessee",
+		"party": "Republican",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Texas",
+		"party": "Democratic",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Texas",
+		"party": "Republican",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Vermont",
+		"party": "Democratic",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Vermont",
+		"party": "Republican",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Virginia",
+		"party": "Democratic",
+		"raceType": "Primary"
+	},
+	{
+		"state": "Virginia",
+		"party": "Republican",
+		"raceType": "Primary"
+	}] 	
+},{
 	"datetime": "2016-02-27",
 	"dateDisplay": "February 27",
 	"events": [{
 		"state": "South Carolina",
 		"party": "Democratic",
-		"raceType": "Primary"
+		"raceType": "Primary",
+		"winnerName": "Hillary Clinton",
+		"winnerPercent": "73.5"
 	}] 	
 },{
 	"datetime": "2016-02-23",
