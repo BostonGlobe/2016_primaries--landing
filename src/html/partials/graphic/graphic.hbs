@@ -5,8 +5,8 @@
 <div class='dir container'>
 
 	{{#each races}}
+	<time class='dir--date' datetime="{{datetime}}">{{dateDisplay}}</time>
 	<ul class='dir--list'>
-		<time class='dir--date' datetime="{{datetime}}">{{dateDisplay}}</time>
 		
 		{{#each events}}
 			<li class='dir--item dir--{{toLowerCase party}}'>
