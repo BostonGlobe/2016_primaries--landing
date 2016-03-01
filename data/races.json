@@ -2,12 +2,12 @@
 	"datetime": "2016-03-01",
 	"dateDisplay": "March 1",
 	"events": [{
-		"state": "Alamaba",
+		"state": "Alabama",
 		"party": "Democratic",
 		"raceType": "Primary"
 	},
 	{
-		"state": "Alamaba",
+		"state": "Alabama",
 		"party": "Republican",
 		"raceType": "Primary"
 	},

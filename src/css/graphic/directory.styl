@@ -15,8 +15,21 @@
 		font($benton, $bold)
 		color $offblack
 		display block
-		border-bottom $border
+		border-bottom 2px solid #ccc
+		background-color #efefef
 		margin-bottom 1em
+		font-size 0.75em
+		padding 0 1em
+		// text-align center
+		
+		&:before
+			content ''
+			display inline-block
+			background url($assets-path + 'img/cal.svg') no-repeat
+			width image-size($assets-path + 'img/cal.svg')[0] + 1px
+			height image-size($assets-path + 'img/cal.svg')[1]
+			margin-right 0.5em
+			opacity 0.6
 	
 	&--item
 		margin-bottom 1em
@@ -29,7 +42,7 @@
 		&-winner
 			font-size 0.75em
 			display inline-block
-			background-color $lt-gray
+			border 1px solid #efefef
 			border-radius 3px
 			font($benton, $bold)
 			padding 0 1em
